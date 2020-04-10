@@ -12,7 +12,7 @@ Aceelerometer data of 30 samples for a particular gesture
 Gyroscope data of 30 samples for a particular gesture
 ### Training the Neural Network
 TensorFlow keras is used for implementation and training of the neural network  
-refer trainig.ipynb for preprocessing the and training the network   
+refer trainig.ipynb for preprocessing the data and training the network   
 The model was trained using ‘rmsprop’ optimizer for 600 epochs by which the validation loss was saturated to very low value. Categorical cross entropy is used as a loss function and the network is optimized based on that categorical cross entropy is SoftMax activation plus a cross entropy loss.   
 The model was trained on Tesla K80 GPU which can do up to 8.73 Teraflops single-precision and up to 2.91 Teraflops double-precision performance with NVIDIA GPU Boost. This network gives a validation accuracy of 91.67 %.  
 ![](images/loss.png)  
