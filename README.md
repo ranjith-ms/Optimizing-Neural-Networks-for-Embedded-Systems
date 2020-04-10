@@ -28,4 +28,5 @@ Pruning of parameters is done properly using the representative dataset during t
 refer Prediction and comparision of models.ipynb for deployment
 We ran the quantized model in the emulated environment to analyze its performance. We used Jupyter notebook configured with python 3.6 background. Serial communication between Jupyter notebook and the Arduino UNO is established using the Pyserial library in python.   
 The data from the MPU6050 is received using Arduino UNO and it is transmitted serially to python environment where the model is running. After receiving the specified number of samples new line character is sent which indicates the end of samples required for classification. This data is fed to quantized neural network which performs classification in emulated environment and displays the output.
-
+## Citation
+Ranjith M S, S Parameshwara. Optimizing Neural Networks for Embedded Systems. IRJET Volume 7, Issue 4,  April 2020 S.NO: 211
